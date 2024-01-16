@@ -12,9 +12,11 @@ class Main{
         while (true){
             System.out.print("--->");
             Integer UserValue= scanner.nextInt(); // Получение числа
+            
             if (UserValue == RandomValue){ // Совпадение
                 System.out.println("Верно! " + RandomValue);
                 RandomValue = CreateRandomValue();
+                
             } else if (UserValue > RandomValue) {
                 if (UserValue < (RandomValue + 15)){ // Границы
                     System.out.println("Загаданное близко но число меньше");
